@@ -26,5 +26,11 @@ application:
     payment-url: http://localhost:8222/api/v1/payments
     book-url: http://localhost:8222/api/v1/books
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 9000

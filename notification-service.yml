@@ -33,5 +33,11 @@ spring:
             timeout: 3000
             writetimeout: 5000
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8040

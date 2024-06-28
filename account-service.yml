@@ -13,5 +13,11 @@ spring:
       ddl-auto: create
     show-sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8080

@@ -24,5 +24,11 @@ application:
   config:
     product-url: http://localhost:8222/api/v1/products
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8060

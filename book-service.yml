@@ -21,5 +21,11 @@ spring:
     password: ${spring.datasource.password}
     locations: classpath:db/migration
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8090

@@ -26,5 +26,11 @@ spring:
           predicates:
             - Path=/api/v1/payments/**
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8222
